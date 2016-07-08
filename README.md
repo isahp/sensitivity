@@ -1,6 +1,7 @@
 # ISAHP 2016 Sensitvity Workshop Resources
 
 [![Join the chat at https://gitter.im/isahp/sensitivity](https://badges.gitter.im/isahp/sensitivity.svg)](https://gitter.im/isahp/sensitivity?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This repository contains all resources related to the *ISAHP 2016 Sensitivity Workshop*, presented by Dr. Bill Adams.
 The topics to be covered include:
 
