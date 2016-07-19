@@ -1,81 +1,6 @@
 set top_net [getTopNet $net]
-set SAVED_WITH_VERSION {2.8.0 made on Tue, 21 Mar 2016 17:36:26 -0400.  VCRevInfo 2850.  Installed on Ubuntu}
+set SAVED_WITH_VERSION {2.8.0 made on Tue, 26 Apr 2016 01:32:26 -0400.  VCRevInfo 2878.  Installed on }
 setDefaultCompareMode $net switch_to_direct
-set x 208
-set y 33
-set desc {}
-set name {A}
-set color gainsboro
-set iconUU {}
-set iconFont "myDefaultFontCluster"
-set winFont "myDefaultFontCluster"
-set width 170
-set height 180
-set clusterName {A}
-set clusterCompareWord {}
-makeCluster $net $x $y $name $desc
-clusterChangeColor $net $name $color
-setClusterIconUU $net $name $iconUU
-setClusterIconFont $net $name $iconFont
-setClusterTitleFont $net $name $winFont
-setClusterWinSize $net $name $width $height
-setClusterCompareWord $net $name $clusterCompareWord
-deIconizeCluster $net $name
-set name {A1}
-set desc {}
-set x 0
-set y 1
-set color {#F0F8FF}
-set iconUU {}
-set font {myDefaultFontNode}
-makeNode $net $clusterName $name $desc $x $y
-setNodeIconUU $net $name $iconUU
-setNodeColor $net $name $color
-setNodeFont $net $name $font
-set name {A2}
-set desc {}
-set x -1
-set y 35
-set color {#F0F8FF}
-set iconUU {}
-set font {myDefaultFontNode}
-makeNode $net $clusterName $name $desc $x $y
-setNodeIconUU $net $name $iconUU
-setNodeColor $net $name $color
-setNodeFont $net $name $font
-set name {A3}
-set desc {}
-set x 0
-set y 70
-set color {#F0F8FF}
-set iconUU {}
-set font {myDefaultFontNode}
-makeNode $net $clusterName $name $desc $x $y
-setNodeIconUU $net $name $iconUU
-setNodeColor $net $name $color
-setNodeFont $net $name $font
-set name {A4}
-set desc {}
-set x 0
-set y 105
-set color {#F0F8FF}
-set iconUU {}
-set font {myDefaultFontNode}
-makeNode $net $clusterName $name $desc $x $y
-setNodeIconUU $net $name $iconUU
-setNodeColor $net $name $color
-setNodeFont $net $name $font
-set name {A5}
-set desc {}
-set x 0
-set y 140
-set color {#F0F8FF}
-set iconUU {}
-set font {myDefaultFontNode}
-makeNode $net $clusterName $name $desc $x $y
-setNodeIconUU $net $name $iconUU
-setNodeColor $net $name $color
-setNodeFont $net $name $font
 set x 887
 set y 210
 set desc {}
@@ -226,8 +151,8 @@ setNodeColor $net $name $color
 setNodeFont $net $name $font
 set name {C3}
 set desc {}
-set x 0
-set y 70
+set x 1
+set y 69
 set color {#F0F8FF}
 set iconUU {}
 set font {myDefaultFontNode}
@@ -288,22 +213,91 @@ makeNode $net $clusterName $name $desc $x $y
 setNodeIconUU $net $name $iconUU
 setNodeColor $net $name $color
 setNodeFont $net $name $font
-set init {B}
-set final {A}
-connectClusters $net $init $final
+set x 208
+set y 33
+set desc {}
+set name {E}
+set color gainsboro
+set iconUU {}
+set iconFont "-*-times-medium-r-normal-*-12-*-*-*-*-*"
+set winFont "-*-times-medium-r-normal-*-12-*-*-*-*-*"
+set width 170
+set height 180
+set clusterName {E}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {A1}
+set desc {}
+set x 0
+set y 1
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {A2}
+set desc {}
+set x -1
+set y 35
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {A3}
+set desc {}
+set x 0
+set y 70
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {A4}
+set desc {}
+set x 0
+set y 105
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {A5}
+set desc {}
+set x 0
+set y 140
+set color {#F0F8FF}
+set iconUU {}
+set font {myDefaultFontNode}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
 set init {C}
-set final {A}
-connectClusters $net $init $final
-set init {A}
 set final {Alternatives}
 connectClusters $net $init $final
-set init {C}
+set init {E}
 set final {Alternatives}
-connectClusters $net $init $final
-set init {A}
-set final {B}
 connectClusters $net $init $final
 set init {D}
+set final {B}
+connectClusters $net $init $final
+set init {E}
 set final {B}
 connectClusters $net $init $final
 set init {B}
@@ -312,8 +306,14 @@ connectClusters $net $init $final
 set init {D}
 set final {C}
 connectClusters $net $init $final
-set init {A}
+set init {E}
 set final {D}
+connectClusters $net $init $final
+set init {B}
+set final {E}
+connectClusters $net $init $final
+set init {C}
+set final {E}
 connectClusters $net $init $final
 setNodeCompareWord  $net {A1} {Alternatives} {important}
 setNodeCompareWord  $net {A1} {B} {important}
@@ -340,30 +340,23 @@ setNodeCompareWord  $net {A5} {B} {important}
 setNodeCompareDirectMult  $net {A5} {B} 30.0
 setNodeCompareWord  $net {A5} {D} {important}
 setNodeCompareDirectMult  $net {A5} {D} 10.5
-setNodeCompareWord  $net {B1} {A} {important}
-setNodeCompareDirectMult  $net {B1} {A} 53.0
 setNodeCompareWord  $net {B1} {C} {important}
 setNodeCompareDirectMult  $net {B1} {C} 23.0
-setNodeCompareWord  $net {B2} {A} {important}
-setNodeCompareDirectMult  $net {B2} {A} 25.0
+setNodeCompareWord  $net {B1} {E} {important}
 setNodeCompareWord  $net {B2} {C} {important}
 setNodeCompareDirectMult  $net {B2} {C} 24.0
-setNodeCompareWord  $net {B3} {A} {important}
-setNodeCompareDirectMult  $net {B3} {A} 15.0
+setNodeCompareWord  $net {B2} {E} {important}
 setNodeCompareWord  $net {B3} {C} {important}
 setNodeCompareDirectMult  $net {B3} {C} 10.0
-setNodeCompareWord  $net {C1} {A} {important}
-setNodeCompareDirectMult  $net {C1} {A} 23.0
+setNodeCompareWord  $net {B3} {E} {important}
 setNodeCompareWord  $net {C1} {Alternatives} {important}
-setNodeCompareWord  $net {C2} {A} {important}
-setNodeCompareDirectMult  $net {C2} {A} 29.0
+setNodeCompareWord  $net {C1} {E} {important}
 setNodeCompareWord  $net {C2} {Alternatives} {important}
-setNodeCompareWord  $net {C3} {A} {important}
-setNodeCompareDirectMult  $net {C3} {A} 37.0
+setNodeCompareWord  $net {C2} {E} {important}
 setNodeCompareWord  $net {C3} {Alternatives} {important}
-setNodeCompareWord  $net {C4} {A} {important}
-setNodeCompareDirectMult  $net {C4} {A} 29.0
+setNodeCompareWord  $net {C3} {E} {important}
 setNodeCompareWord  $net {C4} {Alternatives} {important}
+setNodeCompareWord  $net {C4} {E} {important}
 setNodeCompareWord  $net {D1} {B} {important}
 setNodeCompareDirectMult  $net {D1} {B} 17.0
 setNodeCompareWord  $net {D1} {C} {important}
@@ -383,7 +376,7 @@ setFormulaType $net 0
 catch {limitPowerOptions $net 2 0}
 c-network readAllCompares -network $net -source {
 5
-A
+E
 5
 A1
 A2
@@ -411,12 +404,12 @@ D
 D1
 D2
 
-5 1,0 0,1 2,2 4,3 3,4 
+5 0,0 2,1 3,2 1,3 4,4 
+ 0.000000  1.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000  1.000000 
  0.000000  1.000000  0.000000  0.000000  1.000000 
- 0.000000  0.000000  1.000000  0.000000  1.000000 
- 0.000000  1.000000  0.000000  1.000000  0.000000 
- 0.000000  1.000000  0.000000  0.000000  0.000000 
- 0.000000  0.000000  1.000000  1.000000  0.000000 
+ 1.000000  0.000000  1.000000  0.000000  0.000000 
+ 1.000000  0.000000  0.000000  0.000000  0.000000 
 0
 3 2,0 1,1 4,2 
  0.000000  0.000000 
